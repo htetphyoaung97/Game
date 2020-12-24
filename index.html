@@ -7,6 +7,8 @@
     <title>Game Stores</title>
 
     <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body class="bg-gray-900 text-white">
@@ -52,127 +54,125 @@
         <div class="p-6">
             <p class="uppercase font-bold text-blue-500">popular games</p>
         </div>
-        <div class="grid grid-cols-6 gap-8 mx-auto flex px-6">
-            <div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mx-auto flex px-6" id="popularGames">
+            <div class="mx-auto inline-block">
                 <div class="relative">
                     ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
-                    <div class="rounded-full p-5 bg-gray-800 w-16 absolute -right-4 -bottom-4">71%</div>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game1" x-data="71"></div>
                 </div>
                 <div class="pt-5">
-                    <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                    <p class="capitalize font-bold text-gray-500">ps4 , pc, xbox , ps5, series x , stadia</p>
+                    <a href="review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
+                    <p class="capitalize font-bold text-gray-500">RPG . PS4 , PC, Xbox , PS5, Series x , Stadia</p>
                 </div>
             </div>
-            <div>
+            <div class="mx-auto inline-block">
                 <div class="relative">
-                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
-                    <div class="rounded-full p-5 bg-gray-800 w-16 absolute -right-4 -bottom-4">71%</div>
+                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/genshin1.png" alt="Genshin Impact"></a>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game2" x-data="68"></div>
                 </div>
                 <div class="pt-5">
-                    <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                    <p class="capitalize font-bold text-gray-500">ps4 , pc, xbox , ps5, series x , stadia</p>
+                    <a href="review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
+                    <p class="capitalize font-bold text-gray-500">RPG . PS4 , PC, Nintendo Switch , Andriod ,Ios</p>
                 </div>
             </div>
-            <div>
+            <div class="mx-auto inline-block">
                 <div class="relative">
-                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
-                    <div class="rounded-full p-5 bg-gray-800 w-16 absolute -right-4 -bottom-4">71%</div>
+                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/gow1.png" alt="God Of War"></a>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game3" x-data="80"></div>
                 </div>
                 <div class="pt-5">
-                    <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                    <p class="capitalize font-bold text-gray-500">ps4 , pc, xbox , ps5, series x , stadia</p>
+                    <a href="review.html" class="capitalize font-bold hover:text-gray-500">God Of War</a>
+                    <p class="capitalize font-bold text-gray-500">RPG-Storyline . PS4 , PS5</p>
                 </div>
             </div>
-            <div>
+            <div class="mx-auto inline-block">
                 <div class="relative">
-                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
-                    <div class="rounded-full p-5 bg-gray-800 w-16 absolute -right-4 -bottom-4">71%</div>
+                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cod1.png" alt="Call Of Duty"></a>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game4" x-data="92"></div>
                 </div>
                 <div class="pt-5">
-                    <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                    <p class="capitalize font-bold text-gray-500">ps4 , pc, xbox , ps5, series x , stadia</p>
+                    <a href="review.html" class="capitalize font-bold hover:text-gray-500">Call Of Duty</a>
+                    <p class="capitalize font-bold text-gray-500">Shooting . PS4 , PC, Xbox , PS5, Series x , Stadia</p>
                 </div>
             </div>
-            <div>
+            <div class="mx-auto inline-block">
                 <div class="relative">
-                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
-                    <div class="rounded-full p-5 bg-gray-800 w-16 absolute -right-4 -bottom-4">71%</div>
+                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/godfall1.png" alt="God Fall"></a>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game5" x-data="65"></div>
                 </div>
                 <div class="pt-5">
-                    <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                    <p class="capitalize font-bold text-gray-500">ps4 , pc, xbox , ps5, series x , stadia</p>
+                    <a href="review.html" class="capitalize font-bold hover:text-gray-500">God Fall</a>
+                    <p class="capitalize font-bold text-gray-500">Strategy-RPG . PS4 , PC, PS5</p>
                 </div>
             </div>
-            <div>
+            <div class="mx-auto inline-block">
                 <div class="relative">
-                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
-                    <div class="rounded-full p-5 bg-gray-800 w-16 absolute -right-4 -bottom-4">71%</div>
+                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/lastofus.png" alt="The Last Of Us Part2"></a>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game6" x-data="95"></div>
                 </div>
                 <div class="pt-5">
-                    <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                    <p class="capitalize font-bold text-gray-500">ps4 , pc, xbox , ps5, series x , stadia</p>
+                    <a href="review.html" class="capitalize font-bold hover:text-gray-500">The Last Of Us Part2</a>
+                    <p class="capitalize font-bold text-gray-500">RPG-StoryLine . PS4 , PC, Xbox, Stadia</p>
                 </div>
             </div>
-        </div>
-        <div class="grid grid-cols-6 gap-8 mx-auto flex px-6 pt-6">
-            <div>
+            <div class="mx-auto inline-block">
                 <div class="relative">
-                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
-                    <div class="rounded-full p-5 bg-gray-800 w-16 absolute -right-4 -bottom-4">71%</div>
+                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/persona5.png" alt="Persona 5"></a>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game7" x-data="74"></div>
                 </div>
                 <div class="pt-5">
-                    <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                    <p class="capitalize font-bold text-gray-500">ps4 , pc, xbox , ps5, series x , stadia</p>
+                    <a href="review.html" class="capitalize font-bold hover:text-gray-500">Persona 5</a>
+                    <p class="capitalize font-bold text-gray-500">RPG-Strategy . PS3 , PS4</p>
                 </div>
             </div>
-            <div>
+            <div class="mx-auto inline-block">
                 <div class="relative">
-                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
-                    <div class="rounded-full p-5 bg-gray-800 w-16 absolute -right-4 -bottom-4">71%</div>
+                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/crash1.png" alt="Crash Bandicoot"></a>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game8" x-data="65"></div>
                 </div>
                 <div class="pt-5">
-                    <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                    <p class="capitalize font-bold text-gray-500">ps4 , pc, xbox , ps5, series x , stadia</p>
+                    <a href="review.html" class="capitalize font-bold hover:text-gray-500">Crash Bandicoot 4</a>
+                    <p class="capitalize font-bold text-gray-500">RPG . PS4 , PC, Xbox , PS5</p>
                 </div>
             </div>
-            <div>
+            <div class="mx-auto inline-block">
                 <div class="relative">
-                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
-                    <div class="rounded-full p-5 bg-gray-800 w-16 absolute -right-4 -bottom-4">71%</div>
+                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/ctracing.png" alt="Crash Team Racing"></a>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game9" x-data="70"></div>
                 </div>
                 <div class="pt-5">
-                    <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                    <p class="capitalize font-bold text-gray-500">ps4 , pc, xbox , ps5, series x , stadia</p>
+                    <a href="review.html" class="capitalize font-bold hover:text-gray-500">Crash Team Racing</a>
+                    <p class="capitalize font-bold text-gray-500">Racing . PS4 , PC , Xbox , PS5, Series x , Nintendo Switch</p>
                 </div>
             </div>
-            <div>
+            <div class="mx-auto inline-block">
                 <div class="relative">
-                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
-                    <div class="rounded-full p-5 bg-gray-800 w-16 absolute -right-4 -bottom-4">71%</div>
+                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/harvestmoon.png" alt="Harvest Moon"></a>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game10" x-data="70"></div>
                 </div>
                 <div class="pt-5">
-                    <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                    <p class="capitalize font-bold text-gray-500">ps4 , pc, xbox , ps5, series x , stadia</p>
+                    <a href="review.html" class="capitalize font-bold hover:text-gray-500">Harvest Moon:One World</a>
+                    <p class="capitalize font-bold text-gray-500">Strategy . PS4 , Nintendo Switch</p>
                 </div>
             </div>
-            <div>
+            <div class="mx-auto inline-block">
                 <div class="relative">
-                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
-                    <div class="rounded-full p-5 bg-gray-800 w-16 absolute -right-4 -bottom-4">71%</div>
+                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/gta5.png" alt="GTA V"></a>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game11" x-data="80"></div>
                 </div>
                 <div class="pt-5">
-                    <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                    <p class="capitalize font-bold text-gray-500">ps4 , pc, xbox , ps5, series x , stadia</p>
+                    <a href="review.html" class="capitalize font-bold hover:text-gray-500">GTA V</a>
+                    <p class="capitalize font-bold text-gray-500">RPG - Strategy . PS4 , PC, Xbox , PS5, Series x , Stadia</p>
                 </div>
             </div>
-            <div>
+            <div class="mx-auto inline-block">
                 <div class="relative">
-                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
-                    <div class="rounded-full p-5 bg-gray-800 w-16 absolute -right-4 -bottom-4">71%</div>
+                    ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/devilMC.png" alt="Devil May Cry V"></a>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game12" x-data="79"></div>
                 </div>
                 <div class="pt-5">
-                    <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                    <p class="capitalize font-bold text-gray-500">ps4 , pc, xbox , ps5, series x , stadia</p>
+                    <a href="review.html" class="capitalize font-bold hover:text-gray-500">Devil May Cry V</a>
+                    <p class="capitalize font-bold text-gray-500">RPG-Strategy . PS4 , PC, Xbox , PS5, Series x , Stadia</p>
                 </div>
             </div>
         </div>
@@ -183,40 +183,42 @@
                 <div class="p-6">
                     <p class="uppercase font-bold text-blue-500">recently viewed</p>
                 </div>
-                <div class="flex bg-gray-800 p-8 rounded-md mb-6">
-                    <div class="relative w-48 flex-none">
-                        <img class="w-full" src="images/cyber.png" alt="Cyber2077">
-                        <div class="rounded-full p-5 bg-gray-900 w-16 absolute -right-4 -bottom-4">71%</div>
+                <div id="recent_view">
+                    <div class="flex bg-gray-800 p-8 rounded-md mb-6">
+                        <div class="relative w-48 flex-none">
+                            <img class="w-full" src="images/cyber.png" alt="Cyber2077">
+                            <div class="absolute -right-4 -bottom-4 progress" id="recent1" x-data="71"></div>
+                        </div>
+                        <div class="pt-5 ml-6 w-96">
+                            <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
+                            <p class="capitalize text-gray-400">ps4 , pc, xbox , ps5, series x , stadia</p>
+                            <p class="capitalize text-gray-400 pt-6">Cyberpunk 2077 is a 2020 action role-playing video game developed and published by CD Projekt.
+                                                             The story takes place in Night City, an open world set in the Cyberpunk universe.</p>
+                        </div>
                     </div>
-                    <div class="pt-5 ml-6 w-96">
-                        <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                        <p class="capitalize text-gray-400">ps4 , pc, xbox , ps5, series x , stadia</p>
-                        <p class="capitalize text-gray-400 pt-6">Cyberpunk 2077 is a 2020 action role-playing video game developed and published by CD Projekt.
-                                                         The story takes place in Night City, an open world set in the Cyberpunk universe.</p>
+                    <div class="flex bg-gray-800 p-8 rounded-md mb-6">
+                        <div class="relative w-48 flex-none">
+                            <img class="w-full" src="images/devilMC.png" alt="Devil May Cry V">
+                            <div class="absolute -right-4 -bottom-4 progress" id="recent2" x-data="79"></div>
+                        </div>
+                        <div class="pt-5 ml-6 w-96">
+                            <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">Devil May Cry V</a>
+                            <p class="capitalize text-gray-400">ps4 , pc, xbox , ps5, series x , stadia</p>
+                            <p class="capitalize text-gray-400 pt-6">Devil May Cry V is a 2020 action role-playing video game developed and published by CD Projekt.
+                                                             The story takes place in Night City, an open world set in the Devil May Cry V universe.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex bg-gray-800 p-8 rounded-md mb-6">
-                    <div class="relative w-48 flex-none">
-                        <img class="w-full" src="images/cyber.png" alt="Cyber2077">
-                        <div class="rounded-full p-5 bg-gray-900 w-16 absolute -right-4 -bottom-4">71%</div>
-                    </div>
-                    <div class="pt-5 ml-6 w-96">
-                        <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                        <p class="capitalize text-gray-400">ps4 , pc, xbox , ps5, series x , stadia</p>
-                        <p class="capitalize text-gray-400 pt-6">Cyberpunk 2077 is a 2020 action role-playing video game developed and published by CD Projekt.
-                                                         The story takes place in Night City, an open world set in the Cyberpunk universe.</p>
-                    </div>
-                </div>
-                <div class="flex bg-gray-800 p-8 rounded-md mb-6">
-                    <div class="relative w-48 flex-none">
-                        <img class="w-full" src="images/cyber.png" alt="Cyber2077">
-                        <div class="rounded-full p-5 bg-gray-900 w-16 absolute -right-4 -bottom-4">71%</div>
-                    </div>
-                    <div class="pt-5 ml-6 w-96">
-                        <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
-                        <p class="capitalize text-gray-400">ps4 , pc, xbox , ps5, series x , stadia</p>
-                        <p class="capitalize text-gray-400 pt-6">Cyberpunk 2077 is a 2020 action role-playing video game developed and published by CD Projekt.
-                                                         The story takes place in Night City, an open world set in the Cyberpunk universe.</p>
+                    <div class="flex bg-gray-800 p-8 rounded-md mb-6">
+                        <div class="relative w-48 flex-none">
+                            <img class="w-full" src="images/genshin1.png" alt="Genshin Impact">
+                            <div class="absolute -right-4 -bottom-4 progress" id="recent3" x-data="68"></div>
+                        </div>
+                        <div class="pt-5 ml-6 w-96">
+                            <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">Genshin Impact</a>
+                            <p class="capitalize text-gray-400">ps4 , pc, Nintendo Switch , Andriod , Ios</p>
+                            <p class="capitalize text-gray-400 pt-6">Cyberpunk 2077 is a 2020 action role-playing video game developed and published by CD Projekt.
+                                                             The story takes place in Night City, an open world set in the Cyberpunk universe.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -235,47 +237,47 @@
                 </div>
                 <div class="flex p-4">
                     <div>
-                        <img class="w-16" src="images/cyber.png" alt="cyber">
+                        <img class="w-16" src="images/genshin1.png" alt="Genshin Impact">
                     </div>
                     <div class="pl-4">
-                        <p class="uppercase font-bold text-white">cyberpank 2077</p>
-                        <span class="text-gray-500 font-bold">Sep 10 2020</span>
+                        <p class="uppercase font-bold text-white">Genshin Impact</p>
+                        <span class="text-gray-500 font-bold">Aug 10 2020</span>
                     </div>
                 </div>
                 <div class="flex p-4">
                     <div>
-                        <img class="w-16" src="images/cyber.png" alt="cyber">
+                        <img class="w-16" src="images/godfall1.png" alt="God Fall">
                     </div>
                     <div class="pl-4">
-                        <p class="uppercase font-bold text-white">cyberpank 2077</p>
-                        <span class="text-gray-500 font-bold">Sep 10 2020</span>
+                        <p class="uppercase font-bold text-white">God Fall</p>
+                        <span class="text-gray-500 font-bold">Dec 1 2020</span>
                     </div>
                 </div>
                 <div class="flex p-4">
                     <div>
-                        <img class="w-16" src="images/cyber.png" alt="cyber">
+                        <img class="w-16" src="images/devilMC.png" alt="Devil May Cry V">
                     </div>
                     <div class="pl-4">
-                        <p class="uppercase font-bold text-white">cyberpank 2077</p>
-                        <span class="text-gray-500 font-bold">Sep 10 2020</span>
+                        <p class="uppercase font-bold text-white">Devil May Cry V</p>
+                        <span class="text-gray-500 font-bold">March 18 2020</span>
                     </div>
                 </div>
                 <div class="flex p-4">
                     <div>
-                        <img class="w-16" src="images/cyber.png" alt="cyber">
+                        <img class="w-16" src="images/harvestmoon.png" alt="Harvest Moon">
                     </div>
                     <div class="pl-4">
-                        <p class="uppercase font-bold text-white">cyberpank 2077</p>
-                        <span class="text-gray-500 font-bold">Sep 10 2020</span>
+                        <p class="uppercase font-bold text-white">Harvest Moon</p>
+                        <span class="text-gray-500 font-bold">Jan 10 2020</span>
                     </div>
                 </div>
                 <div class="flex p-4">
                     <div>
-                        <img class="w-16" src="images/cyber.png" alt="cyber">
+                        <img class="w-16" src="images/persona5.png" alt="Persona5">
                     </div>
                     <div class="pl-4">
-                        <p class="uppercase font-bold text-white">cyberpank 2077</p>
-                        <span class="text-gray-500 font-bold">Sep 10 2020</span>
+                        <p class="uppercase font-bold text-white">Persona 5</p>
+                        <span class="text-gray-500 font-bold">Sep 10 2018</span>
                     </div>
                 </div> 
             </div>
@@ -286,6 +288,40 @@
             <p class="text-white capitalize">power by <a href="/" class="hover:text-gray-500">htetphyoaung</a></p>
         </div>
     </footer>
+
+    <script src="js/circle.js"></script>
+
+    <script>
+        var x = document.getElementById("popularGames").children;
+
+        for (i = 0; i < x.length; i++) {
+            let all_games = x[i],
+                child = all_games.querySelector(".progress"),
+                games_id = child.getAttribute("id"),
+                play_rate_value = child.getAttribute("x-data");
+        
+                new CircleProgress(`#${games_id}`, {
+                    max: 100,
+                    value: play_rate_value,
+                    textFormat: 'percent',
+                });
+        }
+
+        var x = document.getElementById("recent_view").children;
+
+        for (i = 0; i < x.length; i++) {
+            let games_review = x[i],
+                child = games_review.querySelector(".progress"),
+                review_id = child.getAttribute("id"),
+                review_value = child.getAttribute("x-data");
+        
+                new CircleProgress(`#${review_id}`, {
+                    max: 100,
+                    value: review_value,
+                    textFormat: 'percent',
+                });
+        }
+    </script>
 
 </body>
 </html>

@@ -1,0 +1,19 @@
+.progress svg {
+    width:3.5rem;
+    height:3.5rem;
+    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+    border-radius: 50%;
+
+}
+
+.circle-progress-value {
+stroke-width: 6px;
+stroke: hsla(#41A24A);
+}
+.circle-progress-circle {
+    stroke-width: 6px;
+    stroke: hsla(#41A24A);
+}
+.circle-progress-text {
+    fill: hsl(105, 14%, 89%);
+}
