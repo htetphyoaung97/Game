@@ -14,11 +14,11 @@
 <body class="bg-gray-900 text-white">
     
     <header class="border-b border-gray-800">
-        <nav class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 py-6">
+        <nav class="container mx-auto flex flex-col md:flex-row lg:flex-row items-center justify-between px-4 py-6">
             <div class="flex items-center">
                 
                 <a href="/">
-                    <img src="images/logo.png" alt="Logo" class="w-32">
+                    <img src="images/genie1.png" alt="Logo" class="w-32">
                 </a>
 
                 <ul class="flex ml-16 space-x-8">
@@ -34,7 +34,7 @@
                 </ul>
 
             </div>
-            <div class="flex items-center">
+            <div class="flex items-center mt-8 md:mt-0 lg:mt-0">
                 <div class="relative">
                     <input type="text" class="bg-gray-800 text-sm rounded-full px-3 py-1 w-64 pl-8 focus:outline-none focus:shadow-outline" placeholder="Search (press '/' to focus)">
                     <div class="absolute top-0 flex items-center h-full ml-2">
@@ -54,7 +54,7 @@
         <div class="p-6">
             <p class="uppercase font-bold text-blue-500">popular games</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mx-auto flex px-6" id="popularGames">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 mx-auto flex px-6" id="popularGames">
             <div class="mx-auto inline-block">
                 <div class="relative">
                     ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="images/cyber.png" alt="Cyber2077"></a>
@@ -178,42 +178,42 @@
         </div>
     </section>
     <section class="container mx-auto py-8 border-t border-gray-800">
-        <div class="grid grid-cols-6 mx-auto flex px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-6 mx-auto flex px-6">
             <div class="col-span-4">
                 <div class="p-6">
                     <p class="uppercase font-bold text-blue-500">recently viewed</p>
                 </div>
                 <div id="recent_view">
-                    <div class="flex bg-gray-800 p-8 rounded-md mb-6">
+                    <div class="flex-none md:flex lg:flex bg-gray-800 p-8 rounded-md mb-6">
                         <div class="relative w-48 flex-none">
                             <img class="w-full" src="images/cyber.png" alt="Cyber2077">
                             <div class="absolute -right-4 -bottom-4 progress" id="recent1" x-data="71"></div>
                         </div>
-                        <div class="pt-5 ml-6 w-96">
+                        <div class="pt-5 md:ml-6 md:w-96 lg:ml-6 lg:w-96">
                             <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">cyberpank 2077</a>
                             <p class="capitalize text-gray-400">ps4 , pc, xbox , ps5, series x , stadia</p>
                             <p class="capitalize text-gray-400 pt-6">Cyberpunk 2077 is a 2020 action role-playing video game developed and published by CD Projekt.
                                                              The story takes place in Night City, an open world set in the Cyberpunk universe.</p>
                         </div>
                     </div>
-                    <div class="flex bg-gray-800 p-8 rounded-md mb-6">
+                    <div class="flex-none md:flex lg:flex bg-gray-800 p-8 rounded-md mb-6">
                         <div class="relative w-48 flex-none">
                             <img class="w-full" src="images/devilMC.png" alt="Devil May Cry V">
                             <div class="absolute -right-4 -bottom-4 progress" id="recent2" x-data="79"></div>
                         </div>
-                        <div class="pt-5 ml-6 w-96">
+                        <div class="pt-5 md:ml-6 md:w-96 lg:ml-6 lg:w-96">
                             <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">Devil May Cry V</a>
                             <p class="capitalize text-gray-400">ps4 , pc, xbox , ps5, series x , stadia</p>
                             <p class="capitalize text-gray-400 pt-6">Devil May Cry V is a 2020 action role-playing video game developed and published by CD Projekt.
                                                              The story takes place in Night City, an open world set in the Devil May Cry V universe.</p>
                         </div>
                     </div>
-                    <div class="flex bg-gray-800 p-8 rounded-md mb-6">
+                    <div class="flex-none md:flex lg:flex bg-gray-800 p-8 rounded-md mb-6">
                         <div class="relative w-48 flex-none">
                             <img class="w-full" src="images/genshin1.png" alt="Genshin Impact">
                             <div class="absolute -right-4 -bottom-4 progress" id="recent3" x-data="68"></div>
                         </div>
-                        <div class="pt-5 ml-6 w-96">
+                        <div class="pt-5 md:ml-6 md:w-96 lg:ml-6 lg:w-96">
                             <a href="pages/review.html" class="capitalize font-bold hover:text-gray-500">Genshin Impact</a>
                             <p class="capitalize text-gray-400">ps4 , pc, Nintendo Switch , Andriod , Ios</p>
                             <p class="capitalize text-gray-400 pt-6">Cyberpunk 2077 is a 2020 action role-playing video game developed and published by CD Projekt.
@@ -222,7 +222,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-2 pl-16">
+            <div class="col-span-2 lg:pl-16">
                 <div class="p-6">
                     <p class="uppercase font-bold text-blue-500">most playing</p>
                 </div>

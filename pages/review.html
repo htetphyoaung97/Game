@@ -15,11 +15,11 @@
 <body class="bg-gray-900 text-white">
     
     <header class="border-b border-gray-800">
-        <nav class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 py-6">
+        <nav class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 py-6 md:flex-row">
             <div class="flex items-center">
                 
                 <a href="../index.html">
-                    <img src="../images/logo.png" alt="Logo" class="w-32">
+                    <img src="../images/genie1.png" alt="Logo" class="w-32">
                 </a>
 
                 <ul class="flex ml-16 space-x-8">
@@ -35,7 +35,7 @@
                 </ul>
 
             </div>
-            <div class="flex items-center">
+            <div class="flex items-center mt-8 md:mt-0 lg:mt-0">
                 <div class="relative">
                     <input type="text" class="bg-gray-800 text-sm rounded-full px-3 py-1 w-64 pl-8 focus:outline-none focus:shadow-outline" placeholder="Search (press '/' to focus)">
                     <div class="absolute top-0 flex items-center h-full ml-2">
@@ -52,36 +52,38 @@
     </header>
 
     <section class="container mx-auto flex p-8 mt-6">
-        <div class="w-80 flex-none">
-            <img class="w-full" src="../images/cyber.png" alt="cyberpank2077">
-        </div>
-        <div class="ml-8 w-5/6">
-            <h4 class="capitalize text-white font-bold text-4xl">cyberpunk 2077</h4>
-            <p class="capitalize text-gray-500 text-base">role playing . PS4 , PC, XBox , PS5, series X , stadia</p>
-            <div class="flex" id="rating">
-                <div class="w-36 flex mt-6">
-                    <div class="progress" id="member" x-data="84"></div>
-                    <p class="capitalize pl-4 pt-2">member score</p>
-                </div>
-                <div class="w-36 flex mt-6 ml-16">
-                    <div class="progress" id="score" x-data="85"></div>
-                    <p class="capitalize pl-4 pt-2">critic score</p>
-                </div>
-                <ul class="w-80 flex mt-6 ml-16 p-4">
-                    <li class="mr-4"><a class="p-2 px-3 rounded-full bg-gray-800 text-lg hover:text-gray-500" href="/"><i class="fas fa-globe-americas"></i></a></li>
-                    <li class="mr-4"><a class="p-2 px-3 rounded-full bg-gray-800 text-lg hover:text-gray-500" href="/"><i class="fab fa-instagram"></i></a></li>
-                    <li class="mr-4"><a class="p-2 px-3 rounded-full bg-gray-800 text-lg hover:text-gray-500" href="/"><i class="fab fa-twitter"></i></a></li>
-                    <li><a class="p-2 px-3 rounded-full bg-gray-800 text-lg hover:text-gray-500" href="/"><i class="fab fa-facebook-square"></i></a></li>
-                </ul>
+        <div class="flex grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
+            <div class="flex-none col-span-3 md:col-span-3 lg:col-span-1 md:ml-16">
+                <img class="w-80" src="../images/cyber.png" alt="cyberpank2077">
             </div>
-            <div class="mt-12">
-                <p class="capitalize text-white pt-6">Cyberpunk 2077 is a 2020 action role-playing video game developed and published by CD Projekt.
-                     The story takes place in Night City, an open world set in the Cyberpunk universe.
-                      Players assume the first-person perspective of a customisable mercenary known as V,
-                       who can acquire skills in hacking and machinery with options for melee and ranged combat.</p>
-            </div>
-            <div class="mt-6">
-                <button class="px-5 py-3 bg-blue-600 rounded hover:bg-blue-800 mt-9 font-bold"><i class="far fa-play-circle"></i> Play Trailer</button>
+            <div class="col-span-3 md:col-span-3 lg:col-span-2 ml-none md:ml-16 lg:ml-16">
+                <h4 class="capitalize text-white font-bold text-4xl my-4 md:my-4 lg:mt-0">cyberpunk 2077</h4>
+                <p class="capitalize text-gray-500 text-base">role playing . PS4 , PC, XBox , PS5, series X , stadia</p>
+                <div class="flex-none md:flex lg:flex" id="rating">
+                    <div class="w-full md:w-36 lg:w-36 flex mt-6">
+                        <div class="progress" id="member" x-data="84"></div>
+                        <p class="capitalize pl-4 pt-2">member score</p>
+                    </div>
+                    <div class="w-full md:w-36 lg:w-36 flex mt-6 ml-0 md:ml-16 lg:ml-16">
+                        <div class="progress" id="score" x-data="85"></div>
+                        <p class="capitalize pl-4 pt-2">critic score</p>
+                    </div>
+                    <ul class="w-80 flex mt-6 py-4 md:p-4 lg:p-4  ml-0 md:ml-16 lg:ml-16">
+                        <li class="mr-4"><a class="p-2 px-3 rounded-full bg-gray-800 text-lg hover:text-gray-500" href="/"><i class="fas fa-globe-americas"></i></a></li>
+                        <li class="mr-4"><a class="p-2 px-3 rounded-full bg-gray-800 text-lg hover:text-gray-500" href="/"><i class="fab fa-instagram"></i></a></li>
+                        <li class="mr-4"><a class="p-2 px-3 rounded-full bg-gray-800 text-lg hover:text-gray-500" href="/"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="p-2 px-3 rounded-full bg-gray-800 text-lg hover:text-gray-500" href="/"><i class="fab fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="mt-12">
+                    <p class="capitalize text-white pt-6">Cyberpunk 2077 is a 2020 action role-playing video game developed and published by CD Projekt.
+                         The story takes place in Night City, an open world set in the Cyberpunk universe.
+                          Players assume the first-person perspective of a customisable mercenary known as V,
+                           who can acquire skills in hacking and machinery with options for melee and ranged combat.</p>
+                </div>
+                <div class="mt-6">
+                    <button class="px-5 py-3 bg-blue-600 rounded hover:bg-blue-800 mt-9 font-bold"><i class="far fa-play-circle"></i> Play Trailer</button>
+                </div>
             </div>
         </div>
     </section>
@@ -89,7 +91,7 @@
         <div class="mb-8">
             <p class="uppercase text-blue-500 font-bold">images</p>
         </div>
-        <div class="grid grid-cols-3 gap-8 flex w-full">
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 flex w-full">
             <div class="col-span-1">
                 <img class="flex-none w-full" src="../images/cyberrm1.png" alt="cyberpank2077">
             </div>
@@ -114,11 +116,11 @@
         <div class="p-6">
             <p class="uppercase font-bold text-blue-500">similar games</p>
         </div>
-        <div class="grid grid-cols-6 gap-8 mx-auto flex px-6 pt-6" id="similarGames">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 mx-auto flex px-6 pt-6" id="similarGames">
             <div class="mx-auto inline-block">
                 <div class="relative">
                     ‌<a href="pages/review.html"><img class="w-full hover:opacity-75" src="../images/gta5.png" alt="GTA V"></a>
-                    <div class="absolute -right-4 -bottom-4 progress" id="game11" x-data="80"></div>
+                    <div class="absolute -right-4 -bottom-4 progress" id="game1" x-data="80"></div>
                 </div>
                 <div class="pt-5">
                     <a href="review.html" class="capitalize font-bold hover:text-gray-500">GTA V</a>
