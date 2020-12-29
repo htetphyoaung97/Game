@@ -91,7 +91,7 @@
 
     </header>
 
-    <section class="container mx-auto flex p-8 mt-6">
+    <section class="container mx-auto p-8 mt-6" x-data="{modal:false}">
         <div class="flex grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
             <div class="flex-none col-span-3 md:col-span-3 lg:col-span-1 md:ml-16">
                 <img class="w-80" src="../images/cyber.png" alt="cyberpank2077">
@@ -122,34 +122,42 @@
                            who can acquire skills in hacking and machinery with options for melee and ranged combat.</p>
                 </div>
                 <div class="mt-6">
-                    <button class="px-5 py-3 bg-blue-600 rounded hover:bg-blue-800 mt-9 font-bold"><i class="far fa-play-circle"></i> Play Trailer</button>
+                    <button @click="modal = !modal" class="px-5 py-3 bg-blue-600 rounded hover:bg-blue-800 mt-9 font-bold"><i class="far fa-play-circle"></i> Play Trailer</button>
                 </div>
             </div>
         </div>
+        <div x-show="modal" class="block justify-center items-center absolute top-24 left-2/4 p-8 bg-gray-700 rounded">
+            <img src="../images/gta5.png" alt="GTA V">
+            <button class="mt-4 px-3 py-2 bg-red-700 text-white hover:bg-red-800 rounded" @click="modal=false"><i class="far fa-times-circle"></i> <span>Close Video</span></button>
+        </div>
     </section>
-    <section class="container mx-auto p-8 border-t border-gray-800">
+    <section class="relative container mx-auto p-8 border-t border-gray-800" x-data="{showImages:false}">
         <div class="mb-8">
             <p class="uppercase text-blue-500 font-bold">images</p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 flex w-full">
             <div class="col-span-1">
-                <img class="flex-none w-full" src="../images/cyberrm1.png" alt="cyberpank2077">
+                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm1.png" alt="cyberpank2077" @click="showImages= !showImages">
             </div>
             <div class="col-span-1">
-                <img class="flex-none w-full" src="../images/cyberrm2.png" alt="cyberpank2077">
+                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm2.png" alt="cyberpank2077" @click="showImages= !showImages">
             </div>
             <div class="col-span-1">
-                <img class="flex-none w-full" src="../images/cyberrm3.png" alt="cyberpank2077">
+                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm3.png" alt="cyberpank2077" @click="showImages= !showImages">
             </div>
             <div class="col-span-1">
-                <img class="flex-none w-full" src="../images/cyberrm4.png" alt="cyberpank2077">
+                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm4.png" alt="cyberpank2077" @click="showImages= !showImages">
             </div>
             <div class="col-span-1">
-                <img class="flex-none w-full" src="../images/cyberrm5.png" alt="cyberpank2077">
+                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm5.png" alt="cyberpank2077" @click="showImages= !showImages">
             </div>
             <div class="col-span-1">
-                <img class="flex-none w-full" src="../images/cyberrm6.png" alt="cyberpank2077">
+                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm6.png" alt="cyberpank2077" @click="showImages= !showImages">
             </div>
+        </div>
+        <div class="block justify-center items-center absolute top-1/4 left-1/4 right-1/4 p-8 bg-gray-700 rounded" x-show="showImages">
+            <img src="../images/cyber1.png" alt="cyberpunk2077">
+            <button class="mt-4 px-3 py-2 bg-red-700 text-white hover:bg-red-800 rounded" @click="showImages=false"><i class="far fa-times-circle"></i> <span>Close</span></button>
         </div>
     </section>
     <section class="container mx-auto pb-9">
