@@ -91,7 +91,9 @@
 
     </header>
 
-    <section class="container mx-auto p-8 mt-6" x-data="{modal:false}">
+    <section class="relative container mx-auto p-8 mt-6" x-data="{modal:false}"
+             @click.away="modal=false"
+             @keydown.escape.window="modal=false"   >
         <div class="flex grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
             <div class="flex-none col-span-3 md:col-span-3 lg:col-span-1 md:ml-16">
                 <img class="w-80" src="../images/cyber.png" alt="cyberpank2077">
@@ -126,38 +128,65 @@
                 </div>
             </div>
         </div>
-        <div x-show="modal" class="block justify-center items-center absolute top-24 left-2/4 p-8 bg-gray-700 rounded">
-            <img src="../images/gta5.png" alt="GTA V">
-            <button class="mt-4 px-3 py-2 bg-red-700 text-white hover:bg-red-800 rounded" @click="modal=false"><i class="far fa-times-circle"></i> <span>Close Video</span></button>
+        <div x-show="modal" class="flex justify-center items-center fixed left-0 top-0 md:left-0 top-0 lg:bottom-0 py-12 bg-gray-800 bg-opacity-90 rounded z-10 w-full">
+            <div class="w-11/12 relative">
+                <iframe style="width:100%; height:600px; justify-content:center; align-items: center; display: flex;" src="https://www.youtube.com/embed/UnA7tepsc7s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="absolute right-0 -top-12">
+                    <button class="hover:text-gray-500" @click="modal=false"><span class="text-lg"><i class="far fa-times-circle"></i></span></button>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="relative container mx-auto p-8 border-t border-gray-800" x-data="{showImages:false}">
+    <section class="relative container mx-auto p-8 border-t border-gray-800" x-data="{showImages:false, uploadImage:''}"
+             @click.away="showImages=false"
+             @keydown.escape.window="showImages=false"
+               >
         <div class="mb-8">
             <p class="uppercase text-blue-500 font-bold">images</p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 flex w-full">
-            <div class="col-span-1">
-                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm1.png" alt="cyberpank2077" @click="showImages= !showImages">
+            <div class="col-span-1" @click.prevent="
+                                                    showImages=true
+                                                    uploadImage='../images/cyber1.png'
+                                                ">
+                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm1.png" alt="cyberpank2077">
             </div>
-            <div class="col-span-1">
-                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm2.png" alt="cyberpank2077" @click="showImages= !showImages">
+            <div class="col-span-1" @click.prevent="
+                                                    showImages=true
+                                                    uploadImage='../images/cyber2.png'
+                                                ">
+                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm2.png" alt="cyberpank2077">
             </div>
-            <div class="col-span-1">
-                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm3.png" alt="cyberpank2077" @click="showImages= !showImages">
+            <div class="col-span-1" @click.prevent="
+                                                    showImages=true
+                                                    uploadImage='../images/cyber3.png'
+                                                ">
+                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm3.png" alt="cyberpank2077">
             </div>
-            <div class="col-span-1">
-                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm4.png" alt="cyberpank2077" @click="showImages= !showImages">
+            <div class="col-span-1" @click.prevent="
+                                                    showImages=true
+                                                    uploadImage='../images/cyber4.png'
+                                                ">
+                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm4.png" alt="cyberpank2077">
             </div>
-            <div class="col-span-1">
-                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm5.png" alt="cyberpank2077" @click="showImages= !showImages">
+            <div class="col-span-1" @click.prevent="
+                                                    showImages=true
+                                                    uploadImage='../images/cyber5.png'
+                                                ">
+                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm5.png" alt="cyberpank2077">
             </div>
-            <div class="col-span-1">
-                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm6.png" alt="cyberpank2077" @click="showImages= !showImages">
+            <div class="col-span-1" @click.prevent="
+                                                    showImages=true
+                                                    uploadImage='../images/cyber6.png'
+                                                ">
+                <img class="flex-none w-full cursor-pointer" src="../images/cyberrm6.png" alt="cyberpank2077">
             </div>
         </div>
-        <div class="block justify-center items-center absolute top-1/4 left-1/4 right-1/4 p-8 bg-gray-700 rounded" x-show="showImages">
-            <img src="../images/cyber1.png" alt="cyberpunk2077">
-            <button class="mt-4 px-3 py-2 bg-red-700 text-white hover:bg-red-800 rounded" @click="showImages=false"><i class="far fa-times-circle"></i> <span>Close</span></button>
+        <div class="flex justify-center items-center fixed z-10 top-0 left-0 p-8 bg-gray-700 rounded lg:w-full md:h-full h-full bg-opacity-90" x-show="showImages" x-ref="cyber1">
+            <img :src="uploadImage" alt="cyberpunk2077">
+            <div class="absolute -top-3 right-6">
+                <button class="mt-4 text-white text-lg hover:text-gray-500 rounded" @click="showImages=false"><span><i class="far fa-times-circle"></i></span></button>
+            </div>
         </div>
     </section>
     <section class="container mx-auto pb-9">
